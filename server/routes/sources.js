@@ -4,7 +4,7 @@ const router = express.Router()
 
 //URL Shortener
 router.get('/', async (req, res) => {
-    const shortUrls = await ShortUrl.find()
+    const shortUrls = await ShortUrl.find().sort({clicks: -1})
     res.render('sources', { shortUrls: shortUrls })
 })
 
