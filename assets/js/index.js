@@ -14,7 +14,7 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `http://localhost:3000/ADMIN/api/users/${data.id}`,
+        "url" : `https://sheltered-gorge-13862.herokuapp.com/ADMIN/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -31,7 +31,7 @@ if(window.location.pathname === "/ADMIN"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:3000/ADMIN/api/users/${id}`,
+            "url" : `https://sheltered-gorge-13862.herokuapp.com/ADMIN/api/users/${id}`,
             "method" : "DELETE"
         }
 
