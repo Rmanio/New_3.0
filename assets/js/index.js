@@ -14,7 +14,7 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `https://study-hack.herokuapp.com/ADMIN/api/users/${data.id}`,
+        "url" : `https://study-hack.herokuapp.com/admin/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -31,7 +31,7 @@ if(window.location.pathname === "/ADMIN"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `https://study-hack.herokuapp.com/ADMIN/api/users/${id}`,
+            "url" : `https://study-hack.herokuapp.com/admin/api/users/${id}`,
             "method" : "DELETE"
         }
 
